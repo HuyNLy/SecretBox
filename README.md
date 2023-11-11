@@ -88,7 +88,8 @@ User can add mutiple people to the chat]
 
 ## Wireframes
 
-[Add picture of your hand sketched wireframes in this section]
+[<img width="862" alt="Screenshot 2023-11-11 at 12 46 48 AM" src="https://github.com/HuyNLy/SecretBox/assets/140474522/1b333104-0c11-4c3b-99c7-40d457c25e22">
+]
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
