@@ -28,18 +28,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Ensure there's a selected row
         guard myTable.indexPathForSelectedRow != nil else { return }
-        
-        // Get access to the detail view controller via the segue's destination.
-        if let detailViewController = segue.destination as? DetailMsg {
-            // Now you have a reference to the DetailMsg instance and you can pass data to it.
-            // For example:
-            // detailViewController.someProperty = someValue
-        } else {
-            print("Segue destination is not an instance of DetailMsg")
-        }
+
+        // Get access to the detail view controller via the segue's destination. (guard to unwrap the optional)
+        guard segue.destination is DetailMsg else { return }
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
