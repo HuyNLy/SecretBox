@@ -7,112 +7,122 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E5E849552AFB64E100481745 /* SecretBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E849542AFB64E100481745 /* SecretBoxApp.swift */; };
-		E5E849572AFB64E100481745 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E849562AFB64E100481745 /* ContentView.swift */; };
-		E5E849592AFB64E300481745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E849582AFB64E300481745 /* Assets.xcassets */; };
-		E5E8495D2AFB64E300481745 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E8495C2AFB64E300481745 /* Preview Assets.xcassets */; };
+		E50929502B0050BB0055C731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509294F2B0050BB0055C731 /* AppDelegate.swift */; };
+		E50929522B0050BB0055C731 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50929512B0050BB0055C731 /* SceneDelegate.swift */; };
+		E50929542B0050BB0055C731 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50929532B0050BB0055C731 /* ViewController.swift */; };
+		E50929572B0050BB0055C731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E50929552B0050BB0055C731 /* Main.storyboard */; };
+		E50929592B0050BD0055C731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E50929582B0050BD0055C731 /* Assets.xcassets */; };
+		E509295C2B0050BD0055C731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E509295A2B0050BD0055C731 /* LaunchScreen.storyboard */; };
+		E50929662B01B43E0055C731 /* MsgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50929652B01B43E0055C731 /* MsgCell.swift */; };
+		E50929682B01FAB30055C731 /* DetailMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50929672B01FAB30055C731 /* DetailMsg.swift */; };
+		E509296A2B02D9D80055C731 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E50929692B02D9D80055C731 /* GoogleService-Info.plist */; };
+		E509296D2B02DA830055C731 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E509296C2B02DA830055C731 /* FirebaseAuth */; };
+		E509296F2B02E2550055C731 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509296E2B02E2550055C731 /* LoginController.swift */; };
+		E50929712B0433EE0055C731 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50929702B0433EE0055C731 /* SearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E5E849512AFB64E100481745 /* SecretBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5E849542AFB64E100481745 /* SecretBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretBoxApp.swift; sourceTree = "<group>"; };
-		E5E849562AFB64E100481745 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E5E849582AFB64E300481745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E5E8495A2AFB64E300481745 /* SecretBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SecretBox.entitlements; sourceTree = "<group>"; };
-		E5E8495C2AFB64E300481745 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E509294C2B0050BB0055C731 /* SecretBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E509294F2B0050BB0055C731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E50929512B0050BB0055C731 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E50929532B0050BB0055C731 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E50929562B0050BB0055C731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E50929582B0050BD0055C731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E509295B2B0050BD0055C731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E509295D2B0050BD0055C731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E50929652B01B43E0055C731 /* MsgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgCell.swift; sourceTree = "<group>"; };
+		E50929672B01FAB30055C731 /* DetailMsg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMsg.swift; sourceTree = "<group>"; };
+		E50929692B02D9D80055C731 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E509296E2B02E2550055C731 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		E50929702B0433EE0055C731 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E5E8494E2AFB64E100481745 /* Frameworks */ = {
+		E50929492B0050BB0055C731 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E509296D2B02DA830055C731 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E5E849482AFB64E100481745 = {
+		E50929432B0050BB0055C731 = {
 			isa = PBXGroup;
 			children = (
-				E5E849532AFB64E100481745 /* SecretBox */,
-				E5E849522AFB64E100481745 /* Products */,
+				E509294E2B0050BB0055C731 /* SecretBox */,
+				E509294D2B0050BB0055C731 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E5E849522AFB64E100481745 /* Products */ = {
+		E509294D2B0050BB0055C731 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E5E849512AFB64E100481745 /* SecretBox.app */,
+				E509294C2B0050BB0055C731 /* SecretBox.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E5E849532AFB64E100481745 /* SecretBox */ = {
+		E509294E2B0050BB0055C731 /* SecretBox */ = {
 			isa = PBXGroup;
 			children = (
-				E5E849632AFB66B000481745 /* View Controller */,
-				E5E849542AFB64E100481745 /* SecretBoxApp.swift */,
-				E5E849562AFB64E100481745 /* ContentView.swift */,
-				E5E849582AFB64E300481745 /* Assets.xcassets */,
-				E5E8495A2AFB64E300481745 /* SecretBox.entitlements */,
-				E5E8495B2AFB64E300481745 /* Preview Content */,
+				E509294F2B0050BB0055C731 /* AppDelegate.swift */,
+				E50929512B0050BB0055C731 /* SceneDelegate.swift */,
+				E50929532B0050BB0055C731 /* ViewController.swift */,
+				E50929672B01FAB30055C731 /* DetailMsg.swift */,
+				E50929652B01B43E0055C731 /* MsgCell.swift */,
+				E50929552B0050BB0055C731 /* Main.storyboard */,
+				E50929702B0433EE0055C731 /* SearchController.swift */,
+				E509296E2B02E2550055C731 /* LoginController.swift */,
+				E50929582B0050BD0055C731 /* Assets.xcassets */,
+				E509295A2B0050BD0055C731 /* LaunchScreen.storyboard */,
+				E509295D2B0050BD0055C731 /* Info.plist */,
+				E50929692B02D9D80055C731 /* GoogleService-Info.plist */,
 			);
 			path = SecretBox;
-			sourceTree = "<group>";
-		};
-		E5E8495B2AFB64E300481745 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				E5E8495C2AFB64E300481745 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		E5E849632AFB66B000481745 /* View Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E5E849502AFB64E100481745 /* SecretBox */ = {
+		E509294B2B0050BB0055C731 /* SecretBox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E5E849602AFB64E300481745 /* Build configuration list for PBXNativeTarget "SecretBox" */;
+			buildConfigurationList = E50929602B0050BD0055C731 /* Build configuration list for PBXNativeTarget "SecretBox" */;
 			buildPhases = (
-				E5E8494D2AFB64E100481745 /* Sources */,
-				E5E8494E2AFB64E100481745 /* Frameworks */,
-				E5E8494F2AFB64E100481745 /* Resources */,
+				E50929482B0050BB0055C731 /* Sources */,
+				E50929492B0050BB0055C731 /* Frameworks */,
+				E509294A2B0050BB0055C731 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SecretBox;
+			packageProductDependencies = (
+				E509296C2B02DA830055C731 /* FirebaseAuth */,
+			);
 			productName = SecretBox;
-			productReference = E5E849512AFB64E100481745 /* SecretBox.app */;
+			productReference = E509294C2B0050BB0055C731 /* SecretBox.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E5E849492AFB64E100481745 /* Project object */ = {
+		E50929442B0050BB0055C731 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					E5E849502AFB64E100481745 = {
+					E509294B2B0050BB0055C731 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = E5E8494C2AFB64E100481745 /* Build configuration list for PBXProject "SecretBox" */;
+			buildConfigurationList = E50929472B0050BB0055C731 /* Build configuration list for PBXProject "SecretBox" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,42 +130,71 @@
 				en,
 				Base,
 			);
-			mainGroup = E5E849482AFB64E100481745;
-			productRefGroup = E5E849522AFB64E100481745 /* Products */;
+			mainGroup = E50929432B0050BB0055C731;
+			packageReferences = (
+				E509296B2B02DA830055C731 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = E509294D2B0050BB0055C731 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E5E849502AFB64E100481745 /* SecretBox */,
+				E509294B2B0050BB0055C731 /* SecretBox */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E5E8494F2AFB64E100481745 /* Resources */ = {
+		E509294A2B0050BB0055C731 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5E8495D2AFB64E300481745 /* Preview Assets.xcassets in Resources */,
-				E5E849592AFB64E300481745 /* Assets.xcassets in Resources */,
+				E509295C2B0050BD0055C731 /* LaunchScreen.storyboard in Resources */,
+				E509296A2B02D9D80055C731 /* GoogleService-Info.plist in Resources */,
+				E50929592B0050BD0055C731 /* Assets.xcassets in Resources */,
+				E50929572B0050BB0055C731 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E5E8494D2AFB64E100481745 /* Sources */ = {
+		E50929482B0050BB0055C731 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5E849572AFB64E100481745 /* ContentView.swift in Sources */,
-				E5E849552AFB64E100481745 /* SecretBoxApp.swift in Sources */,
+				E50929542B0050BB0055C731 /* ViewController.swift in Sources */,
+				E509296F2B02E2550055C731 /* LoginController.swift in Sources */,
+				E50929682B01FAB30055C731 /* DetailMsg.swift in Sources */,
+				E50929712B0433EE0055C731 /* SearchController.swift in Sources */,
+				E50929502B0050BB0055C731 /* AppDelegate.swift in Sources */,
+				E50929522B0050BB0055C731 /* SceneDelegate.swift in Sources */,
+				E50929662B01B43E0055C731 /* MsgCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		E50929552B0050BB0055C731 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E50929562B0050BB0055C731 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E509295A2B0050BD0055C731 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E509295B2B0050BD0055C731 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		E5E8495E2AFB64E300481745 /* Debug */ = {
+		E509295E2B0050BD0055C731 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,15 +244,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		E5E8495F2AFB64E300481745 /* Release */ = {
+		E509295F2B0050BD0055C731 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -257,79 +298,64 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		E5E849612AFB64E300481745 /* Debug */ = {
+		E50929612B0050BD0055C731 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SecretBox/SecretBox.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SecretBox/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_FILE = SecretBox/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "destop-Swift-SecretBox.SecretBox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E5E849622AFB64E300481745 /* Release */ = {
+		E50929622B0050BD0055C731 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SecretBox/SecretBox.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SecretBox/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_FILE = SecretBox/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "destop-Swift-SecretBox.SecretBox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,25 +365,44 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E5E8494C2AFB64E100481745 /* Build configuration list for PBXProject "SecretBox" */ = {
+		E50929472B0050BB0055C731 /* Build configuration list for PBXProject "SecretBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5E8495E2AFB64E300481745 /* Debug */,
-				E5E8495F2AFB64E300481745 /* Release */,
+				E509295E2B0050BD0055C731 /* Debug */,
+				E509295F2B0050BD0055C731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E5E849602AFB64E300481745 /* Build configuration list for PBXNativeTarget "SecretBox" */ = {
+		E50929602B0050BD0055C731 /* Build configuration list for PBXNativeTarget "SecretBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5E849612AFB64E300481745 /* Debug */,
-				E5E849622AFB64E300481745 /* Release */,
+				E50929612B0050BD0055C731 /* Debug */,
+				E50929622B0050BD0055C731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E509296B2B02DA830055C731 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E509296C2B02DA830055C731 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E509296B2B02DA830055C731 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = E5E849492AFB64E100481745 /* Project object */;
+	rootObject = E50929442B0050BB0055C731 /* Project object */;
 }
