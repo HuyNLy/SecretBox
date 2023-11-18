@@ -8,18 +8,20 @@
 import UIKit
 
 
-class DetailMsg: UIViewController{
+import UIKit
 
+class DetailMsg: UIViewController, UITextFieldDelegate {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
        
     }
     
     
-    
-
 }
+
+
 /*
  import UIKit
  import MessageKit
