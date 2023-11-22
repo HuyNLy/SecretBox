@@ -182,13 +182,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter message...." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eY3-mE-huO">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter message...." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eY3-mE-huO">
                                 <rect key="frame" x="44" y="761" width="293" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.78016354990000003" green="0.78016354990000003" blue="0.78016354990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="293" id="pcW-Cm-7pc"/>
-                                    <constraint firstAttribute="height" constant="33" id="xem-vw-0k5"/>
-                                </constraints>
                                 <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -216,10 +213,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NT8-fQ-B7K">
-                                                    <rect key="frame" x="226.66666666666663" y="8" width="146.33333333333337" height="33"/>
+                                                    <rect key="frame" x="138.33333333333337" y="8" width="234.66666666666663" height="33"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labeldgdsgdsg" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45Y-th-jYa">
-                                                            <rect key="frame" x="13.999999999999993" y="6" width="118.33333333333331" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ffsfsafsafsafsjkfbsjfbsjkbfjsbfkjsfbjasbjsabajkdbadbkasdbjasdasdsad" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45Y-th-jYa">
+                                                            <rect key="frame" x="14" y="6" width="206.66666666666666" height="21"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                                             <nil key="highlightedColor"/>
@@ -253,7 +250,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="uXE-AY-PYF" firstAttribute="leading" secondItem="j7z-EN-wsi" secondAttribute="leading" id="1ZQ-Pl-Mrs"/>
-                            <constraint firstItem="eY3-mE-huO" firstAttribute="top" secondItem="uXE-AY-PYF" secondAttribute="bottom" id="JLn-tP-6oi"/>
                             <constraint firstItem="uXE-AY-PYF" firstAttribute="trailing" secondItem="j7z-EN-wsi" secondAttribute="trailing" id="fT5-sS-72g"/>
                             <constraint firstItem="uXE-AY-PYF" firstAttribute="top" secondItem="j7z-EN-wsi" secondAttribute="top" id="sNC-7Y-haC"/>
                         </constraints>

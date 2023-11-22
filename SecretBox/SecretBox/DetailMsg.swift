@@ -8,8 +8,6 @@
 import UIKit
 
 
-
-
 class DetailMsg: UIViewController, UITextFieldDelegate , UITableViewDataSource, UITableViewDelegate{
    
     
@@ -33,22 +31,23 @@ class DetailMsg: UIViewController, UITextFieldDelegate , UITableViewDataSource, 
     
     @IBAction func sendMsgButtonTouched(_ sender:  UIButton)
     {
-        guard let textfromField = msgTextField.text else { return}
+        guard let textfromField = msgTextField.text else { return }
         if textfromField != ""
         {
             messages.append(MsgData(text: textfromField, isFirstUser: isFirstUser))
             msgTableView.beginUpdates()
             msgTableView.insertRows(at: [IndexPath.init(row: messages.count-1, section: 0)], with: .fade)
             msgTableView.endUpdates()
+            msgTableView.scrollToRow(at: IndexPath(row: messages.count-1, section: 0), at: .top, animated: true)
             isFirstUser = !isFirstUser
-            msgTextField = nil;
+            msgTextField.text = ""
         }
         
     }
     
     
     
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt section: Int) -> CGFloat {
+    private func tableView(_ tableView: UITableView, estimatedHeightForRowAt section: Int) -> CGFloat {
         return 49
     }
     
