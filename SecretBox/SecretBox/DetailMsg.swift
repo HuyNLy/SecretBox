@@ -8,18 +8,69 @@
 import UIKit
 
 
-import UIKit
 
-class DetailMsg: UIViewController, UITextFieldDelegate {
+
+class DetailMsg: UIViewController, UITextFieldDelegate , UITableViewDataSource, UITableViewDelegate{
+   
     
+    
+    @IBOutlet var msgTableView: UITableView!
+    
+    @IBOutlet weak var msgTextField: UITextField!
+    
+    var messages: [MsgData] = [MsgData(text: "dfdsfldsf", isFirstUser: true), MsgData(text: "Whta????", isFirstUser: false), MsgData(text: "Wsdfdsfdd", isFirstUser: true), MsgData(text: "Wdgdgsgsffssdfdsfdd", isFirstUser: false), MsgData(text: "I do lol", isFirstUser: true)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        msgTableView.delegate = self
+        msgTableView.dataSource = self
        
     }
     
     
+    
+    var isFirstUser: Bool = true
+    
+    @IBAction func sendMsgButtonTouched(_ sender:  UIButton)
+    {
+        guard let textfromField = msgTextField.text else { return}
+        if textfromField != ""
+        {
+            messages.append(MsgData(text: textfromField, isFirstUser: isFirstUser))
+            msgTableView.beginUpdates()
+            msgTableView.insertRows(at: [IndexPath.init(row: messages.count-1, section: 0)], with: .fade)
+            msgTableView.endUpdates()
+            isFirstUser = !isFirstUser
+            msgTextField = nil;
+        }
+        
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt section: Int) -> CGFloat {
+        return 49
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messages.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "msgCell", for: indexPath) as! MessageTableViewCell
+        cell.updateMsgCell(by: messages[indexPath.row])
+        return cell
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
 }
+
 
 
 /*

@@ -20,6 +20,7 @@
 		E509296F2B02E2550055C731 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509296E2B02E2550055C731 /* LoginController.swift */; };
 		E50929712B0433EE0055C731 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50929702B0433EE0055C731 /* SearchController.swift */; };
 		E5C5B89A2B0877B700248117 /* MsgData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C5B8992B0877B700248117 /* MsgData.swift */; };
+		E5E36C9F2B0DBB8F0076893B /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E36C9E2B0DBB8F0076893B /* MessageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E509296E2B02E2550055C731 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E50929702B0433EE0055C731 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		E5C5B8992B0877B700248117 /* MsgData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgData.swift; sourceTree = "<group>"; };
+		E5E36C9E2B0DBB8F0076893B /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				E50929672B01FAB30055C731 /* DetailMsg.swift */,
 				E50929652B01B43E0055C731 /* MsgCell.swift */,
 				E50929552B0050BB0055C731 /* Main.storyboard */,
+				E5E36C9E2B0DBB8F0076893B /* MessageTableViewCell.swift */,
 				E5C5B8992B0877B700248117 /* MsgData.swift */,
 				E50929702B0433EE0055C731 /* SearchController.swift */,
 				E509296E2B02E2550055C731 /* LoginController.swift */,
@@ -167,6 +170,7 @@
 			files = (
 				E50929542B0050BB0055C731 /* ViewController.swift in Sources */,
 				E5C5B89A2B0877B700248117 /* MsgData.swift in Sources */,
+				E5E36C9F2B0DBB8F0076893B /* MessageTableViewCell.swift in Sources */,
 				E509296F2B02E2550055C731 /* LoginController.swift in Sources */,
 				E50929682B01FAB30055C731 /* DetailMsg.swift in Sources */,
 				E50929712B0433EE0055C731 /* SearchController.swift in Sources */,
