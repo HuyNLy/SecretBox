@@ -182,16 +182,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter message...." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eY3-mE-huO">
-                                <rect key="frame" x="44" y="761" width="293" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.78016354990000003" green="0.78016354990000003" blue="0.78016354990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O92-sE-OdK">
-                                <rect key="frame" x="345" y="762" width="36" height="35"/>
+                                <rect key="frame" x="341" y="784" width="36" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
@@ -201,8 +193,8 @@
                                     <action selector="sendMsgButtonTouched:" destination="Sht-ct-MfU" eventType="primaryActionTriggered" id="Tev-V0-Lct"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uXE-AY-PYF">
-                                <rect key="frame" x="0.0" y="103" width="393" height="651"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uXE-AY-PYF">
+                                <rect key="frame" x="0.0" y="103" width="393" height="679"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="msgCell" rowHeight="49" id="s9C-7A-fFx" customClass="MessageTableViewCell" customModule="SecretBox" customModuleProvider="target">
@@ -213,10 +205,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NT8-fQ-B7K">
-                                                    <rect key="frame" x="138.33333333333337" y="8" width="234.66666666666663" height="33"/>
+                                                    <rect key="frame" x="128.33333333333337" y="8" width="234.66666666666663" height="33"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ffsfsafsafsafsjkfbsjfbsjkbfjsbfkjsfbjasbjsabajkdbadbkasdbjasdasdsad" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45Y-th-jYa">
-                                                            <rect key="frame" x="14" y="6" width="206.66666666666666" height="21"/>
+                                                            <rect key="frame" x="14" y="6" width="206.66666666666663" height="21"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                                             <nil key="highlightedColor"/>
@@ -235,7 +227,7 @@
                                                 <constraint firstItem="NT8-fQ-B7K" firstAttribute="width" relation="lessThanOrEqual" secondItem="ZID-Ut-uO2" secondAttribute="width" multiplier="0.6" id="5Wu-ra-ykh"/>
                                                 <constraint firstAttribute="bottom" secondItem="NT8-fQ-B7K" secondAttribute="bottom" constant="8" id="OGR-WY-YjP"/>
                                                 <constraint firstItem="NT8-fQ-B7K" firstAttribute="top" secondItem="ZID-Ut-uO2" secondAttribute="top" constant="8" id="eaw-p4-IMu"/>
-                                                <constraint firstAttribute="trailing" secondItem="NT8-fQ-B7K" secondAttribute="trailing" constant="20" placeholder="YES" id="jXM-6e-nIQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="NT8-fQ-B7K" secondAttribute="trailing" constant="30" placeholder="YES" id="jXM-6e-nIQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -245,11 +237,21 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter message...." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eY3-mE-huO">
+                                <rect key="frame" x="40" y="785" width="293" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78016354990000003" green="0.78016354990000003" blue="0.78016354990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j7z-EN-wsi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="uXE-AY-PYF" firstAttribute="leading" secondItem="j7z-EN-wsi" secondAttribute="leading" id="1ZQ-Pl-Mrs"/>
+                            <constraint firstItem="j7z-EN-wsi" firstAttribute="bottom" secondItem="uXE-AY-PYF" secondAttribute="bottom" constant="36" id="LHX-KF-8Et"/>
+                            <constraint firstItem="uXE-AY-PYF" firstAttribute="trailing" secondItem="j7z-EN-wsi" secondAttribute="trailing" id="dBq-bs-wP3"/>
                             <constraint firstItem="uXE-AY-PYF" firstAttribute="trailing" secondItem="j7z-EN-wsi" secondAttribute="trailing" id="fT5-sS-72g"/>
                             <constraint firstItem="uXE-AY-PYF" firstAttribute="top" secondItem="j7z-EN-wsi" secondAttribute="top" id="sNC-7Y-haC"/>
                         </constraints>

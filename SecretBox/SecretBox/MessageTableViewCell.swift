@@ -38,7 +38,7 @@ class MessageTableViewCell: UITableViewCell {
     {
         msgBackgroundview.layer.cornerRadius = 16
         msgBackgroundview.clipsToBounds = true
-        trailingContraint = msgBackgroundview.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 20 )
+        trailingContraint = msgBackgroundview.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20 )
         leadingContraint = msgBackgroundview.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20 )
         msglabel.text = message.text
         

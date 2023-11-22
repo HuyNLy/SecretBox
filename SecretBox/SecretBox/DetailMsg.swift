@@ -43,6 +43,11 @@ class DetailMsg: UIViewController, UITextFieldDelegate , UITableViewDataSource, 
             msgTextField.text = ""
         }
         
+       /* if let textfromField = msgTextField.text{
+            
+        }
+        isFirstUser = !isFirstUser
+        msgTextField.text = nil*/
     }
     
     
