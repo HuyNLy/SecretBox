@@ -46,6 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         myProfile.layer.masksToBounds = true
         myProfile.layer.cornerRadius = myProfile.frame.width / 2
         tapImage()
+        print()
 
     }
     

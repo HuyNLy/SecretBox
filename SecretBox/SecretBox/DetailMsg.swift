@@ -16,7 +16,7 @@ class DetailMsg: UIViewController, UITextFieldDelegate , UITableViewDataSource, 
     
     @IBOutlet weak var msgTextField: UITextField!
     
-    var messages: [MsgData] = [MsgData(text: "dfdsfldsf", isFirstUser: true), MsgData(text: "Whta????", isFirstUser: false), MsgData(text: "Wsdfdsfdd", isFirstUser: true), MsgData(text: "Wdgdgsgsffssdfdsfdd", isFirstUser: false), MsgData(text: "I do lol", isFirstUser: true)]
+    var messages: [MsgData] = [MsgData(text: "Hello", isFirstUser: true), MsgData(text: "Hi there, how are you doing?", isFirstUser: false), MsgData(text: "I feel so good, I just have a 7-days break", isFirstUser: true), MsgData(text: "I have 3 exams next week :(", isFirstUser: false), MsgData(text: "Poor you, lol", isFirstUser: true)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
